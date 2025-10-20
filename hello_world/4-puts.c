@@ -1,9 +1,17 @@
-#include <stdio.h>
 /**
- * puts - Prints a static phrase on the
+ * File: 4-puts.c
+ * Auth: FelixBesancon
+ * Desc - Prints a static phrase on the
  * monitor, preceded by a quotation mark,
  * and followed by a new line, using puts
- * command
+ * command.
+ */
+#include <stdio.h>
+/**
+ * main - Entry point
+ * Description: Prints a fixed message
+ * using puts, followed by a new line.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
