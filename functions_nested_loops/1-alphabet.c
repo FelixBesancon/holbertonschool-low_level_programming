@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point of the program
- * _putchar - Writes a character to stdout
+ * print_alphabet - Prints the alphabet in lowercase using _putchar
  *
  * Return: Always 0 (Success)
  */
