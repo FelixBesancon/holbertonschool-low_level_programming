@@ -1,12 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point of the program
- * printf - Prints formatted output to stdout
+ * _putchar - Writes a character to stdout
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar(10);
 	return (0);
 }
