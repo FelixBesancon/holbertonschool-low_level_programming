@@ -18,7 +18,10 @@ int main(void)
 		fibonacci_result = (fibonacci_0 + fibonacci_1);
 		fibonacci_0 = fibonacci_1;
 		fibonacci_1 = fibonacci_result;
-		printf("%ld\n", fibonacci_result);
+		if (fibonacci_result != 1)
+			printf(", ");
+		printf("%ld", fibonacci_result);
 	}
+	putchar('\n');
 	return (0);
 }
