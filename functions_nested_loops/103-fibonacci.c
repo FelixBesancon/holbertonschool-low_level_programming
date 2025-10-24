@@ -12,7 +12,7 @@ int main(void)
 	unsigned long fibonacci_0 = 0;
 	unsigned long fibonacci_1 = 1;
 	unsigned long sum = 0;
-	
+
 	while (fibonacci_result <= 4000000)
 	{
 		fibonacci_result = (fibonacci_0 + fibonacci_1);
@@ -24,4 +24,3 @@ int main(void)
 	printf("%lu\n", sum);
 	return (0);
 }
-
