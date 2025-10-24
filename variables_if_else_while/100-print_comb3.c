@@ -3,7 +3,7 @@
  * main - Entry point of the program
  * putchar - Writes a character to stdout
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
