@@ -4,7 +4,7 @@
  * main - Entry point of the program
  * printf - Prints formated output to stdout
  *
- * Return: Always o (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
