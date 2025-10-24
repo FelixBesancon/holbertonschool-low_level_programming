@@ -8,19 +8,31 @@
  */
 int main(void)
 {
-	unsigned long fibonacci_result = 0;
-	unsigned long fibonacci_0 = 0;
-	unsigned long fibonacci_1 = 1;
+	unsigned long lo_fibonacci_result = 0;
+	unsigned long hi_fibonacci_result = 0;
+	unsigned long lo_fibonacci_0 = 0;
+	unsigned long hi_fibonacci_0 = 0;
+	unsigned long lo_fibonacci_1 = 1;
+	unsigned long hi_fibonacci_1 = 0;
+	unsigned long carry = 0;
 	int n = 0;
 
 	for (n = 1; n <= 98; n++)
 	{
-		fibonacci_result = (fibonacci_0 + fibonacci_1);
-		fibonacci_0 = fibonacci_1;
-		fibonacci_1 = fibonacci_result;
+		carry = 0;
+		lo_fibonacci_result = (lo_fibonacci_0 + lo_fibonacci_1) % 1000000000;
+		carry = (lo_fibonacci_0 + lo_fibonacci_1) / 1000000000;
+		hi_fibonacci_result = (hi_fibonacci_0 + hi_fibonacci_1 + carry);
+		lo_fibonacci_0 = lo_fibonacci_1;
+		hi_fibonacci_0 = hi_fibonacci_1;
+		lo_fibonacci_1 = lo_fibonacci_result;
+		hi_fibonacci_1 = hi_fibonacci_result;
 		if (n > 1)
 			printf(", ");
-		printf("%lu", fibonacci_result);
+		if (hi_fibonacci_result == 0)
+			printf("%lu", lo_fibonacci_result);
+		else
+			printf("%lu%lu", hi_fibonacci_result, lo_fibonacci_result);
 	}
 	putchar('\n');
 	return (0);
