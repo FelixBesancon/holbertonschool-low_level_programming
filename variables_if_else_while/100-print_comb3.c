@@ -7,21 +7,22 @@
  */
 int main(void)
 {
-	int DIZAINE = 0;
-	int UNITE = 0;
+	int tens = 0;
+	int ones = 0;
 
-	for (DIZAINE = 0; DIZAINE <= 9; DIZAINE++)
+	for (tens = 0; tens <= 9; tens++)
 	{
-		for (UNITE = 0; UNITE <= 9; UNITE++)
+		for (ones = (tens + 1); ones <= 9; ones++)
 		{
-			if (DIZAINE != UNITE && DIZAINE < UNITE)
-				{
-					putchar(DIZAINE + '0');
-					putchar(UNITE + '0');
-					putchar(' ');
-				}
+			if (tens != 0 || ones != 1)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			putchar(tens + '0');
+			putchar(ones + '0');
 		}
-	
 	}
+putchar('\n');
 return (0);
 }
