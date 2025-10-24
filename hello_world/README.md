@@ -16,9 +16,6 @@ At the end of this project, you should be able to explain:
 ## Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
 - All files will be compiled on Ubuntu 20.04 LTS using `gcc` with the options: gcc -Wall -Werror -Wextra -pedantic -std=gnu89
-
-markdown
-Copier le code
 - All files should end with a new line
 - A `README.md` file at the root of each folder is mandatory
 - Your code should use the Betty style (checked using `betty-style.pl` and `betty-doc.pl`)
