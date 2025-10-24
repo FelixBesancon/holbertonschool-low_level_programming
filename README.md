@@ -34,14 +34,16 @@ Across the projects in this repo:
 - Code style: Betty (`betty-style.pl`, `betty-doc.pl`)
 
 ## Repository Structure
+```
 holbertonschool-low_level_programming/
-├── README.md # This file
-├── hello_world/ # Project 0
-│ └── README.md
-├── variables_if_else_while/ # Project 1
-│ └── README.md
-└── functions_nested_loops/ # Project 2
-└── README.md
+├── README.md
+├── hello_world/
+│   └── README.md
+├── variables_if_else_while/
+│   └── README.md
+└── functions_nested_loops/
+    └── README.md
+```
 
 ## Projects
 
