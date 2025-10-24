@@ -16,7 +16,7 @@ By the end of this project, you should be able to explain:
 
 ## Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
-- All files will be compiled on Ubuntu 20.04 LTS using: gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+- All files will be compiled on Ubuntu 20.04 LTS using: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89`
 - All files should end with a new line
 - A `README.md` file at the root of the project folder is mandatory
 - There should be no errors and no warnings during compilation
