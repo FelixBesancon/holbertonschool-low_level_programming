@@ -32,7 +32,7 @@ int main(void)
 		if (hi_fibonacci_result == 0)
 			printf("%lu", lo_fibonacci_result);
 		else
-			printf("%lu%lu", hi_fibonacci_result, lo_fibonacci_result);
+			printf("%lu09%lu", hi_fibonacci_result, lo_fibonacci_result);
 	}
 	putchar('\n');
 	return (0);
