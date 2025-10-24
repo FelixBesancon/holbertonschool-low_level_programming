@@ -43,7 +43,7 @@ void print_times_table(int n)
 					_putchar(z % 10 + '0');
 				}
 			}
-			_putchar(10);
+			_putchar('\n');
 			y++;
 		}
 	}
