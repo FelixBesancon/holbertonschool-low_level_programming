@@ -1,0 +1,14 @@
+/**
+ * _isdigit - check for a digit (0 through 9)
+ * @c: the digit to check
+ *
+ * Return: On success 1
+ * On else, 0 is returned
+ */
+int _isdigit(int c);
+{
+	if (c >=48 && c <= 57)
+		return (1);
+	else
+		return (0);
+}
