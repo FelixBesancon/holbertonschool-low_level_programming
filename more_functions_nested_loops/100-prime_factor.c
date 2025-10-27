@@ -13,10 +13,8 @@ int main(void)
 	while (n > 1)
 	{
 		while (n % divisor != 0)
-			
 			divisor++;
 		n = n / divisor;
-			
 	}
 	printf("%lu\n", divisor);
 	return (0);
