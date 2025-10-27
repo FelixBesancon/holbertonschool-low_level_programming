@@ -2,13 +2,13 @@
  * _isupper - check for uppercase character
  * @c: the character to check
  *
- * Return: On success 0.
- * On error, 1 is returned.
+ * Return: On success 1.
+ * On else, 1 is returned.
  */
 int _isupper(int c)
 {
-	if (c >= 97 && c <= 122)
-		return (0);
-	else
+	if (c >= 65 && c <= 90)
 		return (1);
+	else
+		return (0);
 }
