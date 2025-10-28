@@ -8,17 +8,17 @@
 void print_number(int n)
 {
 	unsigned int i = 0;
-	int rest = 0;
-	int tens_count = 1;
+	unsigned int rest = 0;
+	unsigned int tens_count = 1;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		i = -(n + 1) + 1;
+		i = (unsigned int)(-(n + 1)) + 1;
 	}
 	else
-		i = n;
-	while (i / (10 * tens_count) > 0)
+		i = (unsigned int)n;
+	while (i / (tens_count) >= 10)
 		tens_count = tens_count * 10;
 	rest = i;
 	while (tens_count > 0)
