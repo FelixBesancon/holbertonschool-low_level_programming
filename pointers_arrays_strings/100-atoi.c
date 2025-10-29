@@ -23,11 +23,11 @@ int _atoi(char *s)
 			number = 1;
 			while (s[i] >= '0' && s[i] <= '9')
 			{
+				if (minus % 2 != 0)
+					converted = (converted * 10) - (s[i] - '0');
 				converted = (converted * 10) + (s[i] - '0');
 				i++;
 			}
-			if (minus % 2 != 0)
-				converted = -converted;
 		}
 		else
 			i++;
