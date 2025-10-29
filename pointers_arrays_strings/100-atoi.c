@@ -25,7 +25,8 @@ int _atoi(char *s)
 			{
 				if (minus % 2 != 0)
 					converted = (converted * 10) - (s[i] - '0');
-				converted = (converted * 10) + (s[i] - '0');
+				else
+					converted = (converted * 10) + (s[i] - '0');
 				i++;
 			}
 		}
