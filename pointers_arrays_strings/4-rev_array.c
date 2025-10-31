@@ -1,7 +1,7 @@
-/*
+/**
  * reverse_array - Reverses the content of an array of integers.
  * @a: The array to reverse.
- * @n The number of elements of the array.
+ * @n: The number of elements of the array.
  *
  * Return : Void
  */

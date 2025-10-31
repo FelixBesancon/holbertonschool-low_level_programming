@@ -1,5 +1,5 @@
 /**
- * _strcmp - compares two strings.
+ * _strcmp - Compares two strings.
  * @s1: the first string to compare.
  * @s2: the second string to compare.
  *
