@@ -1,5 +1,5 @@
 /**
- * _memset - fills memory with a constant byte.
+ * _memset - Fills memory with a constant byte.
  * @s: The pointer to the memory area to fill.
  * @b: The constant to fill the memory with.
  * @n: The number of bytes to fill.
