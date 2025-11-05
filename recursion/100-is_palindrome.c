@@ -19,12 +19,12 @@ int _strlen_recursion(char *s)
  */
 int _palindrome_search(char *s, int i)
 {
-	if (*s == '\0')
+	if (i <= 0)
 		return (1);
-	else if (s[0] == s[i])
-		return (_palindrome_search(s + 1, i - 2));
-	else
+	else if (s[0] != s[i])
 		return (0);
+	else
+		return (_palindrome_search(s + 1, i - 2));
 }
 /**
  * is_palindrome - Looks if a string is a palindrome.
