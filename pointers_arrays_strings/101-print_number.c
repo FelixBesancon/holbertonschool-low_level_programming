@@ -25,7 +25,7 @@ void print_number(int n)
 		}
 		else
 		{
-			j = -n / i;
+			j = -(n / i);
 			n = n + (j * i);
 		}
 		_putchar(j + '0');
