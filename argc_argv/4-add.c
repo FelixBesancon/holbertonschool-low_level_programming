@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 			error = 1;
 		for (j = 0; argv[i][j] != '\0' && error == 0; j++)
 		{
-			if (argv[i][j] < '0' || argv [i][j] > '9')
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 				error = 1;
 		}
 		if (error == 0)
