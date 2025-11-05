@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_number - Prints an integer.
  * @n: The integer to print.
@@ -15,13 +14,20 @@ void print_number(int n)
 		j = j / 10;
 		i = i * 10;
 	}
-	printf("%d  %d\n", i, j);
 	if (n < 0)
 		_putchar('-');
 	for (j = 0; i > 0; i = (i / 10))
+	{
+		if (n >= 0)
 		{
 			j = n / i;
 			n = n - (j * i);
-			_putchar(j + '0');
 		}
+		else
+		{
+			j = -n / i;
+			n = -n - (j * i);
+		}
+		_putchar(j + '0');
+	}
 }
