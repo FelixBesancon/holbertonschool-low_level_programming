@@ -25,6 +25,12 @@ int main(int argc, char **argv)
 		change %= 2;
 		coins += change / 1;
 		printf("%d\n", coins);
+		return 0;
 	}
-	return 0;
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+	
 }
