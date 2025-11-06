@@ -12,10 +12,15 @@ int main(int argc, char **argv)
 {
 	int change, coins;
 
-	if (argc == 2)
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
 	{
 		change = atoi(argv[1]);
-		if (change < 0)
+		if (change <= 0)
 			printf("%d\n", 0);
 		else
 		{
@@ -31,11 +36,5 @@ int main(int argc, char **argv)
 			printf("%d\n", coins);
 		}
 		return 0;
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-	
+	}	
 }
