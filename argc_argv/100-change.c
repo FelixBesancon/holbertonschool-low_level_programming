@@ -15,16 +15,21 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		change = atoi(argv[1]);
-		coins = change / 25;
-		change %= 25;
-		coins += change / 10;
-		change %= 10;
-		coins += change / 5;
-		change %= 5;
-		coins += change / 2;
-		change %= 2;
-		coins += change / 1;
-		printf("%d\n", coins);
+		if (change < 0)
+			printf("%d\n", 0);
+		else
+		{
+			coins = change / 25;
+			change %= 25;
+			coins += change / 10;
+			change %= 10;
+			coins += change / 5;
+			change %= 5;
+			coins += change / 2;
+			change %= 2;
+			coins += change / 1;
+			printf("%d\n", coins);
+		}
 		return 0;
 	}
 	else
