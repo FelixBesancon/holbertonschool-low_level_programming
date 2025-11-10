@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * str_concat - Concatenates two strings.
  * @s1: The first string to concatenate.
@@ -24,6 +23,8 @@ char *str_concat(char *s1, char *s2)
 			j++;
 	}
 	concat = malloc((i + j + 1) * sizeof(char));
+	if (concat == NULL)
+		return (NULL);
 	while (n < i)
 	{
 		concat[n] = s1[n];
