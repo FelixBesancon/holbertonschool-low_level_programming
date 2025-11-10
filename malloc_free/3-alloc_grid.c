@@ -9,14 +9,19 @@
 int **alloc_grid(int width, int height)
 {
 	int **grid = NULL;
-	int i;
+	int i, j;
 
-	grid = calloc(width, (width * sizeof(int)));
+	grid = malloc(height * sizeof(int *));
 	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
-		grid[i] = calloc(height, (height * sizeof(int)));
+		grid[i] = malloc(width * sizeof(int));
 	if (*grid == NULL)
 		return (NULL);
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+			grid[i][j] = 0;
+	}
 	return (grid);
 }
