@@ -4,6 +4,8 @@
  * alloc_grid function.
  * @grid: The pointer to the 2 dimensional grid to free.
  * @height: The height of the grid.
+ *
+ * Return
  */
 void free_grid(int **grid, int height)
 {
