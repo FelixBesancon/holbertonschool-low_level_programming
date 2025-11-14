@@ -10,32 +10,25 @@
 char *argstostr(int ac, char **av)
 {
 	int i, j;
-	unsigned int n = 1;
+	unsigned int n, size = 0;
 	char *concatenate = NULL;
 
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
-	else
+	for (i = 0; i < ac; i++, size++)
 	{
-		for (i = 0; i < ac; i++, n++)
-		{
-			for (j = 0; av[i][j] != '\0'; j++)
-				n++;
-		}
-		concatenate = malloc(sizeof(char) * (n + 1));
-		if (concatenate == NULL)
-			return (NULL);
-		n = 0;
-		for (i = 0; i < ac; i++)
-		{
-			for (j = 0; av[i][j] != '\0'; j++, n++)
-				concatenate[n] = av[i][j];
-			concatenate[n] = '\n';
-			n++;
-		}
-		concatenate[n] = '\0';
-		return (concatenate);
+		for (j = 0; av[i][j] != '\0'; j++)
+			size++;
 	}
+	concatenate = malloc(sizeof(char) * (size + 1));
+	if (concatenate == NULL)
+		return (NULL);
+	for (n = 0, i = 0; i < ac; i++, n++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++, n++)
+			concatenate[n] = av[i][j];
+		concatenate[n] = '\n';
+	}
+	concatenate[n] = '\0';
+	return (concatenate);
 }
