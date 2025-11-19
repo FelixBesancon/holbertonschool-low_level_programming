@@ -18,7 +18,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (count > 0)
 	{
 		string = va_arg(strings, char*);
-		printf("%s", string);
+		if (string[0] != '\0')
+			printf("%s", string);
+		else
+			printf("(nil)");
 		count--;
 		if (count > 0 && separator != NULL)
 			printf("%s", separator);
