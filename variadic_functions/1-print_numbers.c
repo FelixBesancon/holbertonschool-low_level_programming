@@ -2,8 +2,8 @@
 /**
  * print_numbers - Prints numbers, followed by
  * a new line.
- * @separator: the character to separate the numbers with.
- * @n: the number of numbers to print.
+ * @separator: The character to separate the numbers with.
+ * @n: The number of numbers to print.
  *
  * Return: Void.
  */
