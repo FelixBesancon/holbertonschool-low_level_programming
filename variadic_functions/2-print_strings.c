@@ -13,18 +13,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list strings;
 
 	if (count != 0)
-	va_start(strings, n);
-	while (count > 0)
 	{
-		string = va_arg(strings, char *);
-		if (string != NULL)
-			printf("%s", string);
-		else
-			printf("(nil)");
-		count--;
-		if (count > 0 && separator != NULL)
-			printf("%s", separator);
+		va_start(strings, n);
+		while (count > 0)
+		{
+			string = va_arg(strings, char*);
+			if (string != NULL)
+				printf("%s", string);
+			else
+				printf("(nil)");
+			count--;
+			if (count > 0 && separator != NULL)
+				printf("%s", separator);
+		}
+		va_end(strings);
 	}
 	printf("\n");
-	va_end(strings);
 }
