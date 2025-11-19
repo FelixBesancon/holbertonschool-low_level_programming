@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
+ * main - Prints its own opcodes.
+ * @argc: The arguments count.
+ * @argv: The argument vector.
  *
+ * Return: Always 0 (success).
  */
 int main(int argc, char **argv)
 {
-	unsigned char *p_main = main;
+	unsigned char *p_main = (unsigned char *)main;
 	int i, byte_count;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -26,4 +30,5 @@ int main(int argc, char **argv)
 		printf("%02x", p_main[i]);
 	}
 	printf("\n");
+	return (0);
 }
