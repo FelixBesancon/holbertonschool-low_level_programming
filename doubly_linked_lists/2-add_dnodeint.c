@@ -4,6 +4,7 @@
  * add_dnodeint - Adds a new node at the begenning of a
  * doubly linked dlistint_t list.
  * @head: A pointer of a pointer to a dlistint_t.
+ * @n: An integer to fill the new node with.
  *
  * Return: The  adress of the new element, or NULL if it failed.
  */
@@ -15,10 +16,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (new_dlistint == NULL)
 		return (NULL);
 	new_dlistint->n = n;
+	new_dlistint->prev = NULL;
+	new_dlistint->next = *head;
 	if (*head != NULL)
 		(*head)->prev = new_dlistint;
-	new_dlistint->next = *head;
-	new_dlistint->prev = NULL;
 	*head = new_dlistint;
 	return (new_dlistint);
 }
