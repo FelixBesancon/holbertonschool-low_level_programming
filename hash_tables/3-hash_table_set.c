@@ -35,7 +35,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node_to_add = malloc(sizeof(hash_node_t));
 	if (node_to_add == NULL)
 		return (0);
-	ht->array[index] = node_to_add;
 	node_to_add->key = strdup(key);
 	if (node_to_add->key == NULL)
 	{
